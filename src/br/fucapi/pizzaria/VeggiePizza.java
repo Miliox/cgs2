@@ -1,5 +1,9 @@
 package br.fucapi.pizzaria;
 
-public class VeggiePizza {
+public class VeggiePizza extends Pizza {
+
+	public VeggiePizza(String name) {
+		super(name);
+	}
 
 }
