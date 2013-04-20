@@ -17,7 +17,11 @@ public class PizzaTestDrive {
 			System.out.println("Qual é a pizza:");
 			String nextLine = scan.nextLine();
 			
-			store.orderPizza(nextLine);
+			try {
+				store.orderPizza(nextLine);
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
+			}
 			
 			System.out.print("deseja continuar: ");
 			nextLine = scan.nextLine();
