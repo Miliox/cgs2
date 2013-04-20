@@ -28,6 +28,30 @@ public class Pizza {
 	}
 	
 	public String getName() {
-		return name;
+		return name.toUpperCase() + " (massa: " + dough + "; molho: " + sauce + "; cobertura: " + toppings + ").";
+	}
+
+	public String getDough() {
+		return dough;
+	}
+
+	public void setDough(String dough) {
+		this.dough = dough;
+	}
+
+	public String getSauce() {
+		return sauce;
+	}
+
+	public void setSauce(String sauce) {
+		this.sauce = sauce;
+	}
+
+	public String getToppings() {
+		return toppings;
+	}
+
+	public void setToppings(String toppings) {
+		this.toppings = toppings;
 	}
 }
